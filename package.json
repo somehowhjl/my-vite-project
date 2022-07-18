@@ -1,0 +1,42 @@
+{
+  "name": "my-vite-new",
+  "private": true,
+  "version": "0.0.0",
+  "tw": "npx tailwindcss -i ./src/css/normal.css -o ./src/css/tw.css --watch",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "deploy": "deploy-cli-service deploy",
+    "deploy:dev": "deploy-cli-service deploy --mode dev",
+    "deploy:test": "deploy-cli-service deploy --mode test",
+    "deploy:prod": "deploy-cli-service deploy --mode prod"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "mockjs": "^1.1.0",
+    "pinia": "^2.0.14",
+    "postcss-loader": "^7.0.1",
+    "v3hooks": "^1.5.0",
+    "vue": "^3.2.25",
+    "vue-router": "^4.0.15",
+    "weixin-js-sdk": "^1.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.41",
+    "@vicons/ionicons5": "^0.12.0",
+    "@vitejs/plugin-vue": "^2.3.3",
+    "autoprefixer": "^10.4.7",
+    "cross-env": "^7.0.3",
+    "naive-ui": "^2.30.2",
+    "postcss": "^8.4.14",
+    "postcss-import": "^14.1.0",
+    "postcss-nesting": "^10.1.10",
+    "tailwindcss": "^3.0.24",
+    "typescript": "^4.5.4",
+    "vite": "^2.9.9",
+    "vite-plugin-cdn-import": "^0.3.5",
+    "vite-plugin-mock": "^2.9.6",
+    "vue-tsc": "^0.34.7"
+  }
+}
